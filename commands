@@ -1,0 +1,163 @@
+git --version:
+Displays the installed version of Git.
+
+git init:
+Initializes a new Git repository in the current directory.
+
+git clone <repository_url>:
+Creates a local copy of a remote repository.
+
+git status:
+Shows the current status of the working directory, including staged, unstaged, and untracked files.
+
+git add <file>:
+Adds the specified file(s) to the staging area.
+
+git add .:
+Adds all files (new, modified) in the current directory to the staging area.
+
+git commit -m "<message>":
+Commits the changes in the staging area with a descriptive message.
+
+git commit -a -m "<message>":
+Stages and commits all modified files (except untracked files) with a message.
+
+git log:
+Shows the commit history for the repository.
+
+git diff:
+Shows changes between the working directory and the staging area (or between commits).
+
+Branching and Merging:
+git branch:
+Lists all local branches in the repository.
+
+git branch <branch_name>:
+Creates a new branch with the specified name.
+
+git checkout <branch_name>:
+Switches to the specified branch.
+
+git checkout -b <branch_name>:
+Creates a new branch and switches to it.
+
+git merge <branch_name>:
+Merges the specified branch into the current branch.
+
+git branch -d <branch_name>:
+Deletes a local branch that has already been merged.
+
+git branch -D <branch_name>:
+Forcefully deletes a local branch, even if it hasn't been merged.
+
+git merge --abort:
+Aborts a merge in progress and restores the state of the branch before the merge.
+
+git rebase <branch_name>:
+Reapplies commits from the current branch on top of another branch to keep history linear.
+
+git stash:
+Saves changes in a dirty working directory and returns the directory to a clean state.
+
+git stash pop:
+Restores the most recently stashed changes and removes them from the stash list.
+
+git stash list:
+Lists all stashed changes.
+
+Remote Repositories:
+git remote:
+Lists the remote repositories associated with the project.
+
+git remote add <name> <url>:
+Adds a new remote repository with the given name and URL.
+
+git remote remove <name>:
+Removes a remote repository.
+
+git fetch <remote>:
+Downloads new data (commits, branches, tags) from the remote but doesn't integrate it.
+
+git pull <remote> <branch>:
+Fetches and integrates changes from the remote branch into the current branch.
+
+git push <remote> <branch>:
+Uploads local changes to the remote repository branch.
+
+git push origin --delete <branch_name>:
+Deletes a remote branch.
+
+git push --force <remote> <branch>:
+Forcefully pushes commits, even overwriting remote changes (use with caution).
+
+git push -u <remote> <branch>:
+Pushes to a remote branch and sets it as the upstream branch for future pushes/pulls.
+
+Tagging:
+git tag:
+Lists all the tags in the repository.
+
+git tag <tag_name>:
+Creates a lightweight tag at the current commit.
+
+git tag -a <tag_name> -m "<message>":
+Creates an annotated tag with a message.
+
+git push <remote> <tag_name>:
+Pushes a tag to the remote repository.
+
+git push --tags:
+Pushes all local tags to the remote repository.
+
+git tag -d <tag_name>:
+Deletes a local tag.
+
+git push <remote> :refs/tags/<tag_name>:
+Deletes a remote tag.
+
+Undoing Changes:
+git reset <file>:
+Removes the specified file(s) from the staging area but leaves the working directory unchanged.
+
+git reset --hard <commit>:
+Resets the staging area and the working directory to the specified commit, discarding all changes.
+
+git revert <commit>:
+Reverts a specific commit by creating a new commit that undoes the changes.
+
+git clean -f:
+Removes untracked files from the working directory.
+
+git cherry-pick <commit>:
+Applies the changes introduced by a specific commit to the current branch.
+
+Viewing History and Information:
+git show <commit>:
+Displays details about a specific commit (changes, metadata, etc.).
+
+git blame <file>:
+Shows the commit history for each line in the specified file.
+
+git reflog:
+Shows a log of all actions (including resets and rebases) performed in the repository.
+
+git shortlog:
+Summarizes commit history, grouping commits by author.
+
+git log --oneline:
+Shows a simplified commit history with each commit on a single line.
+
+Configuration:
+git config --global user.name "<name>":
+Sets the global Git username for all repositories.
+
+git config --global user.email "<email>":
+Sets the global Git email for all repositories.
+
+These commands cover a wide range of Git functionalities, from basic version control to advanced operations like rebasing and cherry-picking.
+
+
+
+
+
+
